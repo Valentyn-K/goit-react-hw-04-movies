@@ -1,0 +1,55 @@
+/* .slick-arrow {
+  left: 10px;
+}
+.slick-prev {
+}
+.slick-next {
+} */
+.slickPrev {
+  left: 10px;
+  /* display: block;
+background: red;
+z-index: 1; */
+}
+
+.slickNext {
+  right: 10px;
+  /* display: block;
+background: red;
+z-index: 1; */
+}
+.slickPrev,
+.slickNext {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.slickPrev:before {
+  content: "←";
+}
+.slickNext:before {
+  content: "→";
+}
+
+.slickPrev:before,
+.slickNext:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

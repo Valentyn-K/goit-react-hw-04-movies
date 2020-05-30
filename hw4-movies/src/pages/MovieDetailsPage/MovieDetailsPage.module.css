@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  color: #1a143b;
+}
+
+.movieDetailsWrapper {
+  display: flex;
+}
+
+.imgWrapper {
+  padding: 20px;
+}
+
+.img {
+  height: auto;
+  width: 25vw;
+}
+
+.routs {
+  width: 70vw;
+}

@@ -1,0 +1,14 @@
+.list {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+.listItem {
+  margin-right: 20px;
+}
+
+.selected {
+  color: palevioletred;
+}
