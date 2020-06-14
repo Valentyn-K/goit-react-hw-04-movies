@@ -10,7 +10,6 @@ export default class Reviews extends Component {
     const id = parseInt(str.match(/\d+/));
     fetchAPI.getReviews(id).then(({ data }) => {
       this.setState({ reviews: data.results });
-      console.log(data.results);
     });
   }
 
@@ -19,7 +18,7 @@ export default class Reviews extends Component {
     return (
       <>
         <h1>Reviews</h1>
-{    reviews.length>0 ?    
+{    reviews.length>0 ?
         <ul>
           {reviews.map(({ author, content, id }) => (
             <li key={id}>

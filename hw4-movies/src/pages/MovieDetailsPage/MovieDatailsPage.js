@@ -39,7 +39,7 @@ export default class MovieDatailsPage extends Component {
       return history.push(location.state.from);
     }
 
-    history.goBack();
+    // history.push(history.location.state);
   };
 
   render() {
@@ -53,8 +53,8 @@ export default class MovieDatailsPage extends Component {
         {isLoading && <Loader />}
         <h2 className={css.title}>{original_title || title || name}</h2>
         <div className={css.navContainer}>
-          <GoBackButton onGoBack={this.handleGoBack} />
-          <MovieDetailsNav {...match} className={css.nav} />
+          <GoBackButton {...this.props} onGoBack={this.handleGoBack} />
+          <MovieDetailsNav {...this.props} className={css.nav} />
         </div>
         <div className={css.movieDetailsWrapper}>
           <div className={css.imgWrapper}>
@@ -77,6 +77,7 @@ export default class MovieDatailsPage extends Component {
                   render={(props) => (
                     <AsyncOverview
                       {...this.state.movieGeneralData}
+                      {...this.props}
                       extraPropName="value"
                     />
                   )}

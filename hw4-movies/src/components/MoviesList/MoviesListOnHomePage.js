@@ -44,7 +44,7 @@ const MoviesListOnHomePage = ({ trendingMovies = [], match, location }) => {
                     <Link
                       to={{
                         pathname: `/movies/${id}`,
-                        state: { from: location },
+                        state: { from: location.state },
                       }}
                     >
                       <Button variant="outlined" color="secondary">

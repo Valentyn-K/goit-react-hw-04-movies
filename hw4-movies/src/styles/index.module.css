@@ -1,22 +1,9 @@
-/* .slick-arrow {
-  left: 10px;
-}
-.slick-prev {
-}
-.slick-next {
-} */
 .slickPrev {
   left: 10px;
-  /* display: block;
-background: red;
-z-index: 1; */
 }
 
 .slickNext {
   right: 10px;
-  /* display: block;
-background: red;
-z-index: 1; */
 }
 .slickPrev,
 .slickNext {

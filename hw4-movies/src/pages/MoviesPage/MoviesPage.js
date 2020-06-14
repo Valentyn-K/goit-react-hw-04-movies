@@ -93,6 +93,7 @@ export default class MoviesPage extends Component {
 
   render() {
     const { requestOfResult, page, totalPages, query } = this.state;
+
     return (
       <div className={css.container}>
         <h1 className={css.pageTitle}>MoviesPage</h1>
@@ -110,7 +111,11 @@ export default class MoviesPage extends Component {
               color="secondary"
               count={totalPages}
               defaultPage={page}
+              page={page}
               boundaryCount={2}
+              siblingCount={2}
+              hideNextButton={true}
+              hidePrevButton={true}
               onClick={this.handlePaginationClick}
             />
           </>

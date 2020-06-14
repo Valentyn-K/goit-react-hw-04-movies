@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 import css from "./MainNav.module.css";
 
 const MainNav = ({ location }) => (
@@ -30,4 +30,4 @@ const MainNav = ({ location }) => (
   </ul>
 );
 
-export default MainNav;
+export default withRouter(MainNav);

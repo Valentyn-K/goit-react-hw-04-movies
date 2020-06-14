@@ -31,9 +31,3 @@ export const getReviews = (id = null) => {
   );
 };
 
-// export const getVideos = (id = null) => {
-//   return axios.get(
-//     `https://api.themoviedb.org/3/movie/${id}/videos?api_key=00e822c3614d323c49d84fabf49592d4`
-//   );
-// };
-
